@@ -62,8 +62,8 @@ player2button.addEventListener('click',function(){
               player2button.style.display = 'none'
               error2.style.display = 'none'
               player3.style.display = "none"
-           chance.style.display ='block'
            
+           chance2.innerHTML = `chance: ${count2}`
               chance.style.display = 'none'
     }
     // game won for player1
@@ -84,6 +84,7 @@ if(count==0){
        error3.style.display = 'block'
        chance.style.display = 'none'
        player3.style.display = 'block'
+       chance2.innerHTML = `chance: ${count2}`
     //still  count left
 }else{
     chance.innerHTML = `chance : ${count}`
